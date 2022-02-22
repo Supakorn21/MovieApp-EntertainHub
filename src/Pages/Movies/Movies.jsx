@@ -27,6 +27,7 @@ const Movies = () => {
   }
 
   useEffect(() => {
+    document.title = "ภาพยนตร์";
    fetchMovies()
   }, [page, genreforURL])
   

@@ -19,11 +19,12 @@ const Trending = () => {
   };
 
   useEffect(() => {
+    document.title = "กำลังฮิต";
     fetchTrending();
   }, [page]);
 
   return (
-    <div>
+    <div >
       <span className="pageTitle">กำลังฮิต</span>
       <motion.div layout className="trending">
         <AnimatePresence>
